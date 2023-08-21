@@ -1,0 +1,48 @@
+$color-black: #000000;
+$color-black-2: #2d2d2d;
+$color-white: #ffffff;
+$color-paragraph: #393939;
+$color-paragraph-light: #949494;
+$color-paragraph-white: #ffffff;
+$color-grey: #9a9a9a;
+
+$color-divider: #c1c5cc;
+$color-button-border: #dde0e5;
+$color-bg-grey: #ebedf0;
+$color-light: #818181;
+$color-grey-2: #909090;
+$color-grey-3: #999999;
+$color-line: #333333;
+
+:root {
+    --side-padding: 5rem;
+    --admin-bar-height: 32px;
+
+    --slope-main-color-50: rgba(0,246,255,.50);
+
+    @media (max-width: 1399px) {
+        --side-padding: 2.5rem;
+    }
+
+    @media (max-width: 991px) {
+        --side-padding: 2rem;
+    }
+
+    @media (max-width: 767px) {
+        --side-padding: 1.5rem;
+    }
+
+    @media screen and (max-width: 782px) {
+        --admin-bar-height: 46px;
+    }
+}
+
+body {
+    --slope-main-color: #00f6ff;
+    --slope-foreground: #000000;
+
+    &.elementor-page {
+        --slope-main-color: var(--e-global-color-primary);
+        --slope-foreground: var(--e-global-color-secondary);
+    }
+}

@@ -1,0 +1,77 @@
+@mixin absoluteCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin absoluteVertical {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+@mixin animateIt($duration: 0.25s) {
+    -webkit-transition: all $duration ease;
+    -moz-transition: all $duration ease;
+    -o-transition: all $duration ease;
+    transition: all $duration ease;
+}
+
+@mixin line-anim-mixin($path-number, $offset) {
+    @keyframes line-anim-#{$path-number} {
+        0% {
+            stroke-dashoffset: $offset;
+        }
+        50% {
+            stroke-dashoffset: 0;
+        }
+        100% {
+            stroke-dashoffset: $offset;
+        }
+    }
+}
+
+@mixin mobile-padding($size) {
+    @if $size == 991px {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    } @else if $size == 767px {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+}
+
+/********************
+keyframe
+********************/
+@keyframes box-rotate {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    12.5% {
+        transform: translate(-50%, -50%) rotate(90deg);
+    }
+    25% {
+        transform: translate(-50%, -50%) rotate(180deg);
+    }
+    37.5% {
+        transform: translate(-50%, -50%) rotate(270deg);
+    }
+    50% {
+        transform: translate(-50%, -50%) rotate(360deg);
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    62.5% {
+        transform: translate(-50%, -50%) rotate(90deg);
+    }
+    75% {
+        transform: translate(-50%, -50%) rotate(180deg);
+    }
+    87.5% {
+        transform: translate(-50%, -50%) rotate(270deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}

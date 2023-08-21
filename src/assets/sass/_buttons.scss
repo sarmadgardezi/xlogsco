@@ -1,0 +1,126 @@
+.button,
+.form-submit > .submit,
+.submit-contact input,
+#cancel-comment-reply-link {
+    text-decoration: none !important;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 20;
+    border: none;
+    display: inline-block;
+    color: var(--slope-foreground);
+    font-size: 1.6rem;
+    font-weight: 700;
+    padding: 1.9rem 5.1rem;
+    max-width: 100%;
+    text-align: center;
+    @include animateIt;
+    @media (max-width: 575px) {
+        padding: 1.9rem 4rem;
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--slope-main-color);
+        z-index: -1;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $color-black;
+        z-index: -1;
+        @include animateIt;
+    }
+    &:hover,
+    &:focus {
+        color: $color-white;
+        &::after {
+            top: 0;
+        }
+    }
+}
+
+.button-1 {
+    &::after {
+        background-color: $color-white;
+    }
+    &:hover {
+        color: var(--slope-foreground);
+    }
+}
+
+.button-2 {
+    &::before {
+        background-color: $color-white;
+    }
+    &::after {
+        background-color: $color-black;
+    }
+    &:hover {
+        color: $color-white;
+    }
+}
+
+.form-submit > .submit,
+.submit-contact input {
+    background-color: transparent;
+    white-space: pre-wrap;
+    &:hover,
+    &:focus {
+        color: $color-white;
+    }
+}
+
+.form-submit {
+    &:hover,
+    &:focus {
+        &::after {
+            top: 0;
+        }
+    }
+}
+
+.submit-contact input {
+    background-color: var(--slope-main-color);
+    &:hover {
+        background-color: $color-black;
+    }
+}
+
+.form-submit {
+    width: 100%;
+    position: relative;
+    height: 6.2rem;
+    @media (max-width: 991px) {
+        width: 100%;
+    }
+    > .submit {
+        width: 100%;
+        padding: 0;
+        border: none;
+        height: auto;
+        @include absoluteCenter;
+    }
+}
+
+.form-submit {
+    &:hover {
+        color: $color-white;
+        input {
+            color: $color-white;
+        }
+    }
+    input:hover,
+    input:focus {
+        color: $color-white;
+    }
+}

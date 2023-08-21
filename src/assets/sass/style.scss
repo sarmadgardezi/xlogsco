@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;600;700&display=swap');
+
+@import '_variables.scss';
+@import '_mixins.scss';
+@import '_defaults.scss';
+@import '_globals.scss';
+
+/********************
+preloader
+********************/
+@import '_preloader.scss';
+
+/********************
+typography
+********************/
+@import '_typography.scss';
+
+/********************
+wordpress core
+********************/
+@import '_wp-core.scss';
+
+/********************
+button
+********************/
+@import '_buttons.scss';
+
+/********************
+blog
+********************/
+@import '_blog.scss';
+
+/********************
+project
+********************/
+@import '_projects.scss';
+
+/********************
+testimonial
+********************/
+@import '_testimonials.scss';
+
+/********************
+client
+********************/
+@import '_clients.scss';
+
+/********************
+navigation
+********************/
+@import '_navigation.scss';
+
+/********************
+team member
+********************/
+@import '_team.scss';
+
+/********************
+comments
+********************/
+@import '_comments.scss';
+
+/********************
+404
+********************/
+@import '_error.scss';
+
+/********************
+service
+********************/
+@import '_services.scss';
+
+/********************
+tabs
+********************/
+@import '_tabs.scss';
+
+/********************
+contact form
+********************/
+@import '_contact-form.scss';
+
+/********************
+search
+********************/
+@import '_search.scss';
+
+/********************
+footer
+********************/
+@import '_footer.scss';
+
+/********************
+video
+********************/
+@import '_video.scss';
+
+/********************
+artwork
+********************/
+@import '_artwork.scss';
+
+/********************
+sections
+********************/
+@import '_sections.scss';
+
+.text-image-content-inner {
+    padding: 10% !important;
+}
+.related-posts--heading {
+    margin-bottom: 3% !important;
+}
