@@ -15,7 +15,7 @@ const Home1 = () => {
             {/* Video section - start */}
             <VideoSection />
             {/* Video section - end */}
-
+ 
             {/* About section - start */}
             <TextAboutSection />
             {/* About section - end */}
