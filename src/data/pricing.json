@@ -1,0 +1,57 @@
+{
+  "introText": "Terre estere doloremique sei totames laudantium remeseo aperiam, eaque ipsa quae ab illo inventore veritatis",
+  "leftText": "Dolor lorem ipsu seti per se neque porro quisquam est, quister set dolorem per sei donec nulla est rete et quasi architecto beataes vitae dicta sunt",
+  "plans": [
+    {
+      "title": "BASIC",
+      "classColor": "pricing-orange",
+      "value": "$29",
+      "period": "per month",
+      "features": [
+        "25 GB Storage",
+        "24/7 Support",
+        "Up to 50 Users",
+        "Donec Estu",
+        "Lorem Ipsum"
+      ],
+      "actionLink": {
+        "to": "/",
+        "text": "CHOOSE"
+      }
+    },
+    {
+      "title": "ADVANCED",
+      "classColor": "pricing-blue",
+      "value": "$59",
+      "period": "per month",
+      "features": [
+        "25 GB Storage",
+        "24/7 Support",
+        "Up to 50 Users",
+        "Donec Estu",
+        "Lorem Ipsum"
+      ],
+      "actionLink": {
+        "to": "#",
+        "text": "CHOOSE"
+      }
+    },
+    {
+      "title": "EXPERT",
+      "classColor": "pricing-green",
+      "value": "$99",
+      "period": "per month",
+      "features": [
+        "25 GB Storage",
+        "24/7 Support",
+        "Up to 50 Users",
+        "Donec Estu",
+        "Lorem Ipsum"
+      ],
+      "actionLink": {
+        "to": "#",
+        "text": "CHOOSE"
+      }
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "into": "PORT\nFOL\nIO ",
+  "into2": "Check our \nrecent work",
+  "portfolioItems": [
+    {
+      "className": "2x2",
+      "action": {
+        "type": "item",
+        "number": 1
+      },
+      "description": {
+        "text": "Smartphone",
+        "caption": "BUSINESS CARDS"
+      }
+    },
+    {
+      "className": "1x1",
+      "action": {
+        "type": "item",
+        "number": 2
+      },
+      "description": {
+        "text": "At Work",
+        "caption": "PSD MOCKUP"
+      }
+    },
+    {
+      "className": "1x2",
+      "action": {
+        "type": "item",
+        "number": 3
+      },
+      "description": {
+        "text": "Carbon Bike",
+        "caption": "ULTRAFAST"
+      }
+    },
+    {
+      "className": "1x1",
+      "action": {
+        "type": "popup",
+        "number": 1
+      },
+      "description": {
+        "text": "Design",
+        "caption": "SKYSCRAPER"
+      }
+    },
+    {
+      "className": "2x1",
+      "action": {
+        "type": "popup",
+        "number": 2
+      },
+      "description": {
+        "text": "A4 Paper",
+        "caption": "PSD MOCKUP"
+      }
+    }
+  ]
+}

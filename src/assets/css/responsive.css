@@ -1,0 +1,394 @@
+@media screen and (max-width: 1600px) {
+  .content-1170,
+  .content-960,
+  .content-740 {
+    max-width: 95%;
+  }
+}
+
+@media screen and (max-width: 1270px) {
+  li.milestone {
+    margin: 0 25px;
+  }
+
+  li.milestone:before {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .sm-clean li {
+    margin-right: 8px;
+  }
+
+  .sm-clean a,
+  .sm-clean a:hover,
+  .sm-clean a:focus,
+  .sm-clean a:active,
+  .sm-clean a.highlighted {
+    padding: 15px 8px;
+  }
+
+  .footer-content {
+    width: 100%;
+    padding: 0;
+  }
+
+  .bg-holder {
+    display: none;
+  }
+
+  .section-title-holder {
+    float: none !important;
+    display: block;
+    position: relative !important;
+    width: auto !important;
+    top: 0 !important;
+    padding-top: 0;
+  }
+
+  .section-title-holder .entry-title br,
+  .section.page-split .section-title-holder .page-desc br {
+    display: none;
+  }
+
+  .section h2.entry-title {
+    margin-bottom: 0 !important;
+  }
+
+  .section.page-split .section-title-holder .page-desc {
+    display: block;
+    margin-top: 20px;
+  }
+
+  .sticky-spacer {
+    height: auto !important;
+    width: auto !important;
+    position: relative !important;
+  }
+
+  .section-content-holder {
+    width: 100% !important;
+    margin-top: 75px;
+    float: none !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .info-text {
+    margin-bottom: 20px;
+  }
+
+  .info-text br {
+    display: none;
+  }
+
+  .portfolio-load-content-holder.show,
+  .team-load-content-holder.show {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  #team-holder {
+    margin-bottom: 75px;
+  }
+
+  .full-width {
+    padding: 30px 0;
+  }
+
+  .section-wrapper {
+    padding: 75px 0 15px 0;
+  }
+
+  .full-width .section-wrapper {
+    padding-top: 50px;
+  }
+
+  .blog-holder-scode {
+    margin-bottom: 25px;
+  }
+
+  ul.milestones-holder {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  #header-main-menu {
+    padding-bottom: 70px;
+  }
+
+  .menu-wrapper {
+    width: 95%;
+  }
+
+  .main-menu ul {
+    width: 12em;
+  }
+
+  .toggle-holder {
+    display: block;
+  }
+
+  .sm-clean li {
+    margin: 0 auto !important;
+    border: 0;
+  }
+
+  .sm-clean a.has-submenu {
+    display: inline-block;
+  }
+
+  .menu-holder {
+    position: fixed;
+    text-align: center;
+    background-color: #060606;
+    right: -100%;
+    top: 77px;
+    transition: right 0.3s ease;
+    height: 100%;
+    width: 300px;
+    overflow: auto;
+    max-width: 100%;
+  }
+
+  .header-holder {
+    transform: none;
+  }
+
+  .menu-holder.show {
+    right: 0;
+  }
+
+  .sm-clean ul ul a,
+  .sm-clean ul ul a:hover,
+  .sm-clean ul ul a:focus,
+  .sm-clean ul ul a:active {
+    border: none;
+  }
+
+  .sm-clean a span.sub-arrow {
+    background: transparent;
+  }
+
+  .sm-clean a,
+  .sm-clean a:hover,
+  .sm-clean a:focus,
+  .sm-clean a:active,
+  .sm-clean a.highlighted {
+    padding: 10px 18px 10px 18px;
+    padding-left: 10px !important;
+    margin-bottom: 5px;
+  }
+
+  .wait-01s,
+  .wait-02s,
+  .wait-03s,
+  .wait-04s,
+  .wait-05s,
+  .wait-06s,
+  .wait-07s,
+  .wait-08s,
+  .wait-09s,
+  .wait-10s,
+  .wait-11s,
+  .wait-12s,
+  .wait-13s,
+  .wait-14s,
+  .wait-15s {
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+  }
+
+  .section-wrapper {
+    padding: 40px 0 0 0;
+  }
+
+  .full-width {
+    padding: 0;
+  }
+
+  .section h2.entry-title,
+  .page-template-default.page .section h1.entry-title {
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  .section-content-holder {
+    margin-top: 35px;
+  }
+
+  .big-text br {
+    display: none;
+  }
+
+  li.milestone {
+    width: 40%;
+    margin: 30px 0;
+  }
+
+  .section.page-split h2.entry-title {
+    font-size: 50px;
+    line-height: 50px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header-logo img {
+    max-width: 140px;
+    width: auto !important;
+    height: auto !important;
+  }
+
+  .one_half,
+  .one_third,
+  .one_fourth,
+  .two_third,
+  .three_fourth {
+    width: 100% !important;
+    float: none;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .footer-mail {
+    font-size: 30px;
+  }
+
+  .site-content {
+    overflow: hidden;
+  }
+
+  .section.page-split h2.entry-title {
+    max-width: 90%;
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .section.page-split .section-title-holder .page-desc {
+    margin-bottom: 30px;
+  }
+
+  .big-text {
+    font-size: 27px;
+    line-height: 35px;
+    text-align: center;
+  }
+
+  .big-text br {
+    display: none;
+  }
+
+  .section.full-screen .section-wrapper {
+    transform: none;
+  }
+
+  .big-text {
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  a.button {
+    padding-left: 35px;
+    padding-right: 35px;
+    font-size: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .grid-item,
+  .grid-sizer {
+    width: 100% !important;
+  }
+
+  .info-text {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+
+  .blog-item-holder-scode {
+    display: block;
+    width: 100%;
+    margin: 45px 0;
+  }
+
+  .text-slider-wrapper {
+    width: 100%;
+  }
+
+  .image-slider-wrapper {
+    margin-bottom: 20px;
+  }
+
+  #team-holder {
+    margin-bottom: 50px;
+  }
+
+  .section-wrapper {
+    padding: 55px 0 20px 0;
+  }
+
+  .section.full-screen {
+    min-height: auto;
+    display: block;
+    padding: 30px;
+  }
+
+  #home.section.full-screen {
+    min-height: calc(100vh - 135px);
+    display: flex;
+  }
+
+  .full-width {
+    padding: 0 0 20px 0;
+  }
+
+  .copyright-holder {
+    max-width: 90%;
+    margin: 0 auto;
+    line-height: 25px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .text-slider-wrapper .text-slide {
+    font-size: 16px;
+    line-height: 32px;
+  }
+
+  li.milestone {
+    display: block;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .milestones-holder li:last-child {
+    margin-bottom: 0;
+  }
+
+  p.milestone-num {
+    font-size: 40px;
+  }
+
+  p.milestone-text {
+    font-size: 16px;
+    line-height: 120%;
+    max-width: 95%;
+  }
+
+  p.milestone-text br {
+    display: none;
+  }
+
+  .skill-text {
+    width: calc(100% - 110px);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .footer-mail {
+    font-size: 20px;
+  }
+}

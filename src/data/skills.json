@@ -1,0 +1,28 @@
+{
+  "intro": "OUR \nSKI\nLLS",
+  "intro2": "Our set of \ncompetences",
+  "descText": "Ghostly white figures in coveralls and \nhelmets are soflty dancing of the cosmic",
+
+  "skillsProgress": [
+    {
+      "title": "Creativity",
+      "percentage": 75
+    },
+    {
+      "title": "Cooking",
+      "percentage": 45
+    },
+    {
+      "title": "PhP",
+      "percentage": 90
+    },
+    {
+      "title": "Marketing",
+      "percentage": 65
+    },
+    {
+      "title": "Design",
+      "percentage": 85
+    }
+  ]
+}
