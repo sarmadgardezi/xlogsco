@@ -1,0 +1,246 @@
+.search {
+    position: relative;
+    input:not(.wp-block-search__input) {
+        width: 100%;
+        font-size: 1.4rem;
+        font-weight: 500;
+        color: $color-paragraph;
+        border-bottom: 1px solid $color-bg-grey;
+    }
+    button:not(.wp-block-search__button) {
+        @include absoluteVertical;
+        right: 0.7rem;
+        background-color: transparent;
+        border: 0;
+        outline: none;
+        i {
+            font-size: 2rem;
+            color: var(--slope-main-color);
+        }
+    }
+}
+
+.search-result {
+    // margin-bottom: 13.3rem;
+
+    @media (max-width: 991px) {
+        margin-bottom: 0;
+
+        .sidebar-column {
+            &-wrapper {
+                margin-top: 5rem;
+            }
+        }
+    }
+
+    &--inner {
+        width: 100%;
+        // margin-top: 4rem;
+        > .container {
+            padding-left: 0;
+            padding-right: 0;
+            > .row {
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+    }
+
+    .col-lg-8 {
+        .blog-list .container {
+            padding: 0;
+        }
+    }
+
+    & > .container > .row > .col-lg-12 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    @media (max-width: 991px) {
+        .blog-list .col-lg-6 {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+
+    .blog-list-single {
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .heading-container {
+        margin: 13.8rem 0 4.7rem 0;
+        .heading-medium {
+            letter-spacing: -0.1rem;
+        }
+        .heading-small {
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+        }
+        @media (max-width: 991px) {
+            margin: 6.5rem 0 4.7rem 0;
+        }
+
+        @media (max-width: 767px) {
+            margin: 4.5rem 0 3rem 0;
+        }
+    }
+    div[class*='col'] {
+        position: static;
+    }
+}
+
+.search-error-content {
+    margin: 15rem 0 0 0;
+    @media (max-width: 991px) {
+        margin: 7.5rem 0 0 0;
+    }
+    @media (max-width: 767px) {
+        margin: 5rem 0 0 0;
+    }
+
+    .illustration {
+        position: absolute;
+        right: 0;
+        transform: translateY(10rem);
+    }
+    @media (max-width: 1100px) {
+        .illustration {
+            right: -20rem;
+        }
+    }
+    @media (max-width: 991px) {
+        .illustration {
+            display: none;
+        }
+    }
+    .heading-very-large {
+        margin: 0;
+    }
+    .paragraph {
+        font-size: 2rem;
+        line-height: 4rem;
+        color: $color-grey-3;
+        font-weight: 600;
+        letter-spacing: -0.1rem;
+        b {
+            color: $color-black;
+            font-weight: 600;
+        }
+        &:nth-of-type(1) {
+            margin: 2.4rem 0 1.6rem 0;
+        }
+        &:nth-of-type(2) {
+            margin: 4.2rem 0 1rem 0;
+        }
+    }
+    .heading-large {
+        font-size: 3rem;
+        line-height: 5rem;
+        font-weight: 600;
+        margin-bottom: 3.8rem;
+    }
+    .navigation-menu-menu {
+        opacity: 1;
+        background-color: transparent;
+        padding: 0;
+        margin: 0;
+
+        @media (max-width: 991px) {
+            margin-top: 2rem;
+        }
+
+        .menu {
+            list-style: none;
+            padding: 0;
+            > li {
+                opacity: 1;
+                visibility: visible;
+                padding: 0;
+                transform: translateY(0);
+                @media (max-width: 991px) {
+                    margin-top: 2rem;
+                }
+                a {
+                    color: $color-black;
+                    width: 100%;
+                    font-size: 4rem;
+                    line-height: 5rem;
+                    span {
+                        @include animateIt;
+                    }
+                    &::before {
+                        content: '';
+                        display: inline-block;
+                        width: 0;
+                        height: 4.2rem;
+                        opacity: 0;
+                        visibility: hidden;
+                        margin-bottom: -0.4rem;
+                        background: var(--slope-main-color);
+                        @include animateIt;
+
+                        @media (max-width: 991px) {
+                            height: 3.2rem;
+                        }
+                    }
+                    &:hover {
+                        span {
+                            margin-left: 1.4rem;
+                        }
+                        color: $color-black;
+                        &::before {
+                            width: 0.8rem;
+                            opacity: 1;
+                            visibility: visible;
+                        }
+                    }
+                    @media (max-width: 991px) {
+                        font-size: 3rem;
+                        line-height: 4rem;
+                    }
+                }
+                .sub-menu,
+                .children {
+                    li {
+                        a {
+                            &:hover {
+                                color: $color-black;
+                            }
+                        }
+                    }
+                }
+                &:hover {
+                    a {
+                        font-size: 4rem;
+                        color: $color-black;
+                    }
+                    @media (max-width: 991px) {
+                        a {
+                            font-size: 3rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .search {
+        @media (min-width: 991px) {
+            width: 75%;
+        }
+        input {
+            height: 7rem;
+            padding-left: 1rem;
+            font-size: 2rem;
+            font-weight: 600;
+            color: $color-paragraph;
+        }
+        button {
+            i {
+                font-size: 2.4rem;
+            }
+        }
+    }
+}

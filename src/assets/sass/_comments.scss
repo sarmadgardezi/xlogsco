@@ -1,0 +1,472 @@
+/****************************************
+comments list
+****************************************/
+.comment-list {
+    margin-top: 13.5rem;
+
+    @media (max-width: 991px) {
+        margin-top: 4rem;
+        .container {
+            padding: 0;
+        }
+    }
+
+    .comment-reply-title {
+        font-size: 2rem;
+        line-height: 4rem;
+    }
+
+    &--heading {
+        font-size: 4rem;
+        font-weight: 700;
+        color: $color-black;
+        margin-bottom: 5.5rem;
+        @media (max-width: 991px) {
+            margin-bottom: 0;
+        }
+    }
+
+    .parent--comment {
+        display: flex;
+        border-bottom: 1px solid $color-bg-grey;
+        padding-bottom: 3.9rem;
+        @media (max-width: 500px) {
+            display: block;
+        }
+    }
+
+    .comment {
+        position: relative;
+
+        &:not(:first-child) {
+            margin-top: 5rem;
+            @media (max-width: 991px) {
+                margin-top: 2.5rem;
+            }
+        }
+
+        .comment {
+            .parent--comment {
+                padding-left: 15%;
+            }
+
+            margin-top: 5rem;
+
+            @media (max-width: 991px) {
+                margin-left: 3.5%;
+                .parent--comment {
+                    padding-left: 2.5%;
+                }
+            }
+        }
+
+        @media (max-width: 991px) {
+            .comment--content > *:not(.comment-inner-wrapper):not(.reply-button):not(.parent--comment) {
+                margin-left: 0;
+            }
+            .comment-inner-wrapper {
+                margin-bottom: 0rem;
+            }
+        }
+
+        &--avatar {
+            margin-right: 3.8rem;
+            img {
+                border-radius: 50%;
+            }
+            @media (max-width: 991px) {
+                margin-right: 2.5rem;
+            }
+            @media (max-width: 500px) {
+                width: 100%;
+                margin-bottom: 2rem;
+            }
+        }
+
+        &--content {
+            max-width: 85%;
+
+            @media (max-width: 500px) {
+                max-width: 95%;
+            }
+
+            > h2 {
+                margin-bottom: -1rem;
+            }
+
+            > h2:nth-child(n + 2) {
+                margin-top: 2rem;
+            }
+
+            *:nth-child(n + 2) {
+                margin-top: 1.5rem;
+            }
+
+            a {
+                text-decoration: none;
+            }
+
+            .name {
+                font-size: 1.6rem;
+                line-height: 3rem;
+                font-weight: 700;
+                color: $color-black;
+                letter-spacing: normal;
+                position: relative;
+                width: max-content;
+                max-width: 70%;
+                @include animateIt;
+                text-decoration-color: var(--slope-main-color) !important;
+                &:hover {
+                    text-decoration: underline !important;
+                    text-decoration-color: var(--slope-main-color) !important;
+                    text-decoration-thickness: 2px !important;
+                }
+            }
+
+            .date {
+                font-size: 1.2rem;
+                line-height: initial;
+                font-weight: 500;
+                color: $color-black;
+                letter-spacing: initial;
+            }
+
+            p {
+                font-size: 1.6rem;
+                font-weight: 500;
+                line-height: 3rem;
+                color: $color-black;
+                margin-top: 1.5rem;
+            }
+
+            .reply-button {
+                position: absolute;
+                top: 5px;
+                right: 10px;
+
+                @media (max-width: 500px) {
+                    top: 10.2rem;
+                }
+
+                a {
+                    font-size: 1.4rem;
+                    font-weight: 700;
+                    color: $color-black;
+                    text-decoration: none;
+                    @include animateIt;
+                    text-decoration-color: var(--slope-main-color) !important;
+                    &:hover {
+                        text-decoration: underline !important;
+                        text-decoration-color: var(--slope-main-color) !important;
+                        text-decoration-thickness: 2px !important;
+                    }
+                }
+            }
+        }
+
+        &:last-child:not(:nth-child(-n + 2)) {
+            .parent--comment {
+                border-bottom: none;
+                padding-bottom: 0;
+            }
+        }
+    }
+
+    .pingback,
+    .trackback {
+        .name {
+            max-width: 100%;
+        }
+    }
+}
+
+/****************************************
+comment respond form
+****************************************/
+.comment-respond {
+    margin-top: 2.5rem;
+
+    .comment-reply-title {
+        margin-top: 2rem;
+        small {
+            max-height: 0;
+            visibility: hidden;
+            opacity: 0;
+            position: absolute;
+            a {
+                font-size: 1.6rem;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.comment-form--wrapper {
+    // margin: 7.5rem 0 14.5rem 0;
+    h3 {
+        font-size: 4rem;
+        font-weight: 700;
+        color: $color-black;
+        margin-bottom: 6.2rem;
+    }
+
+    .comment-respond {
+        margin: 13.5rem 0 0 0;
+    }
+
+    @media (max-width: 991px) {
+        .comment-respond {
+            margin: 3rem 0 0 0;
+        }
+
+        h3 {
+            margin-bottom: 0;
+        }
+
+        .container {
+            padding: 0;
+        }
+
+        &:not(.logged-in-form) {
+            .comment-form {
+                margin-top: 2rem;
+            }
+        }
+    }
+}
+
+.comment-form {
+    &--inner {
+        display: flex;
+    }
+
+    .cookies-consent {
+        margin-top: 2.4rem;
+
+        display: block;
+        position: relative;
+        padding-left: 35px;
+
+        cursor: pointer;
+        font-size: 22px;
+
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+
+        @media (max-width: 250px) {
+            padding-left: 0;
+            padding-top: 35px;
+        }
+
+        @media (max-width: 991px) {
+            margin-top: 5rem;
+        }
+
+        input {
+            height: initial;
+            margin-right: 1rem;
+
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+        }
+
+        .paragraph {
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: $color-paragraph;
+            line-height: initial;
+
+            @media (max-width: 575px) {
+                font-size: 1.4rem;
+                line-height: 2rem;
+            }
+        }
+
+        .checkmark {
+            position: absolute;
+            top: 0.7rem;
+            left: 0;
+            width: 2.2rem;
+            height: 2.2rem;
+            background-color: transparent;
+            border: 2px solid $color-bg-grey;
+
+            @media (max-width: 575px) {
+                top: 0;
+            }
+        }
+
+        /* When the checkbox is checked, add a blue background */
+        input:checked ~ .checkmark {
+            background-color: $color-bg-grey;
+        }
+
+        /* Create the checkmark/indicator (hidden when not checked) */
+        .checkmark:after {
+            content: '';
+            position: absolute;
+            display: none;
+        }
+
+        /* Show the checkmark when checked */
+        input:checked ~ .checkmark:after {
+            display: block;
+        }
+
+        /* Style the checkmark/indicator */
+        .checkmark:after {
+            content: '\f00c';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            font-size: 1.2rem;
+            @include absoluteCenter;
+        }
+    }
+
+    .field-group {
+        > input {
+            display: block;
+            width: 100%;
+
+            &:not(:first-child) {
+                margin-top: 2.7rem;
+            }
+        }
+    }
+
+    .textarea-group {
+        height: 100%;
+
+        textarea {
+            width: 100%;
+            height: 100%;
+        }
+
+        @media (max-width: 991px) {
+            &:not(.single) {
+                margin-top: 3.3rem;
+            }
+        }
+    }
+
+    .form-submit-row {
+        margin-top: 2.6rem;
+    }
+
+    .cancel {
+        display: none;
+    }
+}
+
+.logged-in-form {
+    .comment-reply-title {
+        margin-bottom: 0;
+    }
+
+    .logged-in-as {
+        a {
+            font-size: 1.4rem;
+            font-weight: 500;
+
+            &:first-child {
+                color: $color-paragraph;
+            }
+
+            &:nth-child(n + 2) {
+                color: $color-black;
+                font-weight: 700;
+            }
+        }
+    }
+
+    .textarea-group {
+        width: 100%;
+        height: 20rem;
+        margin: 3.5rem 0 0 0;
+
+        textarea {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    @media (max-width: 991px) {
+        .form-submit {
+            margin-top: 0;
+        }
+    }
+}
+
+.comment-pagination {
+    margin-top: 2rem;
+
+    a {
+        font-size: 1.2rem;
+        font-weight: 700;
+        line-height: 1.5rem;
+        letter-spacing: 0.1rem;
+        text-decoration: none;
+        color: $color-black;
+        margin: 0 0.5rem;
+        @include animateIt;
+
+        &:hover {
+            color: var(--slope-main-color);
+        }
+    }
+
+    span {
+        color: $color-light;
+        font-size: 1.2rem;
+        font-weight: 700;
+        line-height: 1.5rem;
+        margin: 0 0.5rem;
+        letter-spacing: 0.1rem;
+    }
+}
+
+/****************************************
+comment form inside comment
+****************************************/
+.comment-list {
+    .comment-form {
+        .form-submit-row {
+            .cancel {
+                display: block;
+            }
+        }
+    }
+}
+
+#cancel-comment-reply-link {
+    width: 100%;
+    height: 6.2rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-bg-grey;
+    font-size: 1.6rem;
+    color: $color-black;
+    text-decoration: none;
+    text-align: center;
+    &::before {
+        background-color: $color-bg-grey;
+    }
+    &::after {
+        background-color: $color-black;
+    }
+    &:hover {
+        color: $color-white;
+    }
+    @media (max-width: 991px) {
+        width: 100%;
+        // margin: 1rem 0 0 -1rem;
+        transform: translateY(0);
+    }
+}

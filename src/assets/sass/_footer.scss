@@ -1,0 +1,94 @@
+.footer {
+    padding-bottom: var(--side-padding);
+    &--logo {
+        img {
+            max-width: 100%;
+        }
+    }
+    &--wrapper {
+        padding: 9.1rem 0 5rem 0;
+        background-color: $color-black;
+        @media (max-width: 1024px) {
+            padding: 7.5rem 0;
+        }
+        @media (max-width: 991px) {
+            padding: 5rem 0 3.6rem 0;
+        }
+        @media (min-width: 1025px) and (max-width: 1340px) {
+            padding-left: 2.5rem;
+            padding-right: 2.5rem;
+        }
+    }
+    &--paragraph {
+        display: flex;
+        justify-content: flex-end;
+
+        @media (min-width: 1200px) {
+            padding-left: 6rem;
+        }
+
+        @media (min-width: 992px) and (max-width: 1199px) {
+            padding-left: 1rem;
+        }
+
+        .heading,
+        .heading > * {
+            font-size: 3rem;
+            line-height: 5rem;
+            letter-spacing: -0.1rem;
+            @media (max-width: 991px) {
+                font-size: 2.25rem;
+                line-height: 4.25rem;
+            }
+        }
+    }
+    &--header {
+        .row {
+            display: flex;
+            align-items: center;
+        }
+        border-bottom: 1px solid $color-line;
+        padding-bottom: 9rem;
+        margin-bottom: 4.9rem;
+        @media (max-width: 991px) {
+            padding-bottom: 2.2rem;
+            margin-bottom: -0.8rem;
+            .footer--paragraph {
+                margin-top: 2.1rem;
+                display: inline-block;
+            }
+        }
+    }
+    .detail-single {
+        margin-top: 5rem;
+        h6 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: $color-paragraph-light;
+            line-height: 1.6rem;
+            letter-spacing: normal;
+        }
+        h4 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: $color-white;
+            line-height: 3.2rem;
+            margin-top: 0.7rem;
+            letter-spacing: normal;
+        }
+        @media (max-width: 991px) {
+            margin-top: 4.3rem;
+        }
+    }
+    &-bottom {
+        margin: 10rem 0;
+        @media (max-width: 991px) {
+            margin: 2rem 0 -0.5rem 0;
+        }
+        h6 {
+            font-size: 1.4rem;
+            font-weight: 500;
+            color: $color-paragraph-light;
+        }
+    }
+}

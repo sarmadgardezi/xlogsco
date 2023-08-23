@@ -1,0 +1,20 @@
+.client-slider {
+    .swiper-container {
+        height: auto;
+    }
+    .client-slide {
+        text-align: center;
+        img {
+            opacity: 0.2;
+            @include animateIt;
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+    @media (max-width: 1024px) {
+        .client-slide {
+            text-align: initial;
+        }
+    }
+}

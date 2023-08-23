@@ -1,0 +1,54 @@
+#elementor-panel-category-gfxpartner .elementor-panel-category-items .elementor-element-wrapper .elementor-element {
+    background-color: #0e76bc;
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+
+#elementor-panel-category-gfxpartner
+    .elementor-panel-category-items
+    .elementor-element-wrapper
+    .elementor-element
+    .icon {
+    color: white;
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+
+#elementor-panel-category-gfxpartner
+    .elementor-panel-category-items
+    .elementor-element-wrapper
+    .elementor-element
+    .title {
+    color: white;
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+
+#elementor-panel-category-gfxpartner
+    .elementor-panel-category-items
+    .elementor-element-wrapper
+    .elementor-element:hover {
+    background-color: white;
+}
+
+#elementor-panel-category-gfxpartner
+    .elementor-panel-category-items
+    .elementor-element-wrapper
+    .elementor-element:hover
+    .icon {
+    color: #0e76bc;
+}
+
+#elementor-panel-category-gfxpartner
+    .elementor-panel-category-items
+    .elementor-element-wrapper
+    .elementor-element:hover
+    .title {
+    color: #0e76bc;
+}

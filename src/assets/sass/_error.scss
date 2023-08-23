@@ -1,0 +1,152 @@
+.not-found {
+    margin: 14.4rem 0 13.8rem 0;
+    position: relative;
+    @media (max-width: 991px) {
+        margin: 7.5rem 0 4.5rem 0;
+    }
+    @media (max-width: 767px) {
+        margin: 5rem 0 4.5rem 0;
+    }
+    .illustration {
+        position: absolute;
+        right: -5rem;
+        transform: translateY(10rem);
+    }
+    @media (max-width: 1100px) {
+        .illustration {
+            right: -20rem;
+        }
+    }
+    @media (max-width: 991px) {
+        .illustration {
+            display: none;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    @media (max-width: 767px) {
+        .illustration {
+            right: -40rem;
+        }
+    }
+    &-content {
+        @media (max-width: 991px) and (min-width: 767px) {
+            padding-right: 50px;
+        }
+        h2 {
+            margin: 7.9rem 0 4rem 0;
+        }
+        .heading.heading-medium {
+            color: $color-grey-3;
+            font-weight: 600;
+            line-height: 4.4rem;
+        }
+        .navigation-menu-menu {
+            opacity: 1;
+            background-color: transparent;
+            padding: 0;
+            margin: 3rem 0 12.3rem 0;
+            .menu {
+                list-style: none;
+                padding: 0;
+                > li {
+                    opacity: 1;
+                    visibility: visible;
+                    padding: 0;
+                    transform: translateY(0);
+                    @media (max-width: 991px) {
+                        margin-top: 2rem;
+                    }
+                    a {
+                        color: $color-black;
+                        width: 100%;
+                        font-size: 4rem;
+                        line-height: 5rem;
+                        span {
+                            @include animateIt;
+                        }
+                        &::before {
+                            content: '';
+                            display: inline-block;
+                            width: 0;
+                            height: 4.2rem;
+                            opacity: 0;
+                            visibility: hidden;
+                            margin-bottom: -0.4rem;
+                            background-color: var(--slope-main-color);
+                            @include animateIt;
+
+                            @media (max-width: 991px) {
+                                height: 3.2rem;
+                            }
+                        }
+                        &:hover {
+                            span {
+                                margin-left: 1.4rem;
+                            }
+                            font-size: 4rem;
+                            color: $color-black;
+                            &::before {
+                                width: 0.8rem;
+                                opacity: 1;
+                                visibility: visible;
+                            }
+                        }
+                        @media (max-width: 991px) {
+                            font-size: 3rem;
+                            line-height: 4rem;
+                        }
+                    }
+                    &:hover {
+                        a {
+                            font-size: 4rem;
+                            color: $color-black;
+                        }
+                        @media (max-width: 991px) {
+                            a {
+                                font-size: 3rem;
+                            }
+                        }
+                    }
+                    .sub-menu,
+                    .children {
+                        li {
+                            a {
+                                &:hover {
+                                    color: $color-black;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 1024px) {
+        &-content {
+            h2 {
+                margin: 5rem 0 5rem 0;
+            }
+            .navigation-menu-menu {
+                margin: 3rem 0 3rem 0;
+            }
+            .navigation-menu-social {
+                margin-top: 2.5rem;
+            }
+        }
+    }
+    @media (max-width: 991px) {
+        .heading-very-large {
+            margin-top: -0.4rem;
+        }
+        h2 {
+            margin: 2.1rem 0 1.9rem 0;
+        }
+        .navigation-menu-menu {
+            margin: 1.5rem 0 1.5rem 0;
+        }
+        .navigation-menu-social {
+            margin-top: 1rem;
+        }
+    }
+}

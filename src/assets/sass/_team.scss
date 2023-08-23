@@ -1,0 +1,90 @@
+.team-member {
+    max-width: 100%;
+    width: max-content;
+    position: relative;
+
+    h5 {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        font-weight: 700;
+        margin-top: 1.7rem;
+        color: $color-black;
+    }
+    h6 {
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+        font-weight: 500;
+        margin-top: -0.4rem;
+        color: $color-black;
+    }
+    &-image {
+        position: relative;
+        overflow: hidden;
+        img {
+            object-fit: cover;
+            object-position: top center;
+        }
+    }
+    &-social {
+        width: 100%;
+        height: 100%;
+        background-color: var(--slope-main-color-50);
+        position: absolute;
+        top: 50%;
+        left: 0;
+        opacity: 0;
+        visibility: hidden;
+        ul {
+            @include absoluteCenter;
+            list-style: none;
+            padding: 0;
+            li {
+                position: relative;
+                top: 5rem;
+                opacity: 0;
+                visibility: hidden;
+                &:nth-child(n + 2) {
+                    margin-top: 2rem;
+                }
+                a {
+                    width: 5rem;
+                    height: 5rem;
+                    border-radius: 50%;
+                    background-color: $color-white;
+                    display: block;
+                    position: relative;
+                    @include animateIt;
+                    i {
+                        @include absoluteCenter;
+                        font-size: 1.6rem;
+                        color: $color-black;
+                        @include animateIt;
+                    }
+                    &:hover {
+                        background-color: $color-black;
+                        i {
+                            color: $color-white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 991px) {
+        h5 {
+            font-size: 1.8rem;
+        }
+        h6 {
+            font-size: 1.6rem;
+        }
+    }
+
+    width: 100%;
+    &-image {
+        width: 100%;
+        img {
+            width: 100%;
+        }
+    }
+}

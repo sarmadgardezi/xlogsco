@@ -1,0 +1,367 @@
+.slope-contact-form {
+    width: 100%;
+    br {
+        display: none;
+    }
+    div:not(.submit-contact) {
+        input,
+        textarea {
+            font-size: 1.8rem;
+            border-color: $color-black;
+            width: 100%;
+            margin-bottom: 3.5rem;
+            &:focus {
+                outline: none;
+                border-color: var(--slope-main-color);
+            }
+            &::-webkit-input-placeholder {
+                color: $color-grey-2;
+            }
+            &::-moz-placeholder {
+                color: $color-grey-2;
+            }
+            &:-ms-input-placeholder {
+                color: $color-grey-2;
+            }
+            &:-moz-placeholder {
+                color: $color-grey-2;
+            }
+        }
+        input {
+            height: 4.8rem;
+        }
+        textarea {
+            height: 14.7rem;
+            margin-bottom: 3rem;
+        }
+    }
+    .select-wrapper {
+        margin-bottom: 3.5rem;
+        span {
+            outline: none;
+        }
+        > div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            @media (max-width: 991px) {
+                flex-wrap: wrap;
+            }
+            &:nth-child(n + 2) {
+                margin-top: 3.5rem;
+            }
+            > * {
+                width: 48.6%;
+                @media (max-width: 991px) {
+                    width: 100%;
+                }
+            }
+        }
+        label {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: $color-black;
+        }
+    }
+    .fields-wrapper {
+        .input-contact {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            > * {
+                width: 47.9%;
+                @media (max-width: 991px) {
+                    width: 100%;
+                }
+            }
+            > span {
+                &:nth-of-type(even) {
+                    margin-left: 3rem;
+                    @media (max-width: 1199px) {
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+    .textarea-contact {
+        textarea {
+            width: 100%;
+        }
+    }
+    .submit-contact {
+        input {
+            width: 28rem;
+            height: 6.2rem;
+            padding: 0;
+        }
+        @media (max-width: 991px) {
+            input {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.bootstrap-select {
+    width: 100%;
+    @media (max-width: 991px) {
+        margin-top: 2.2rem;
+    }
+    .dropdown-toggle {
+        background-color: $color-white;
+        border-bottom: 2px solid $color-black;
+        color: $color-black;
+        font-size: 1.8rem;
+        line-height: 3rem;
+        height: 4.8rem;
+        outline: none;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        box-shadow: none;
+        &.bs-placeholder {
+            color: $color-grey-2;
+        }
+    }
+    .dropdown-menu:not(.inner) {
+        max-height: 29.5rem !important;
+        padding: 0 0 3.1rem 0;
+    }
+    .dropdown-menu {
+        background-color: $color-black;
+        overflow: auto;
+        li {
+            line-height: 3rem;
+            &:first-child {
+                margin-top: 2.5rem;
+            }
+            &:not(:first-child) {
+                margin-top: 0.7rem;
+            }
+            a {
+                color: $color-grey;
+                @include animateIt;
+                padding-left: 2.3rem;
+                span {
+                    font-size: 1.8rem;
+                }
+                &:hover {
+                    background-color: transparent;
+                    color: $color-white;
+                }
+                &:focus {
+                    outline: none;
+                    background-color: transparent;
+                }
+            }
+            &.selected {
+                a {
+                    color: $color-white;
+                    background-color: transparent;
+                }
+            }
+        }
+
+        span {
+            font-size: 1.4rem;
+        }
+    }
+    .inner.show {
+        overflow-y: visible !important;
+    }
+
+    .dropdown-menu.open .dropdown-menu.inner {
+        display: block !important;
+    }
+}
+
+.select-os {
+    .os-scrollbar {
+        &-track {
+            background-color: $color-black-2;
+            width: 0.9rem;
+            border-radius: 10rem;
+        }
+        &-handle {
+            background-color: var(--slope-main-color);
+            border-radius: 10rem;
+        }
+        &-vertical {
+            margin-right: 2rem;
+            padding: 2.5rem 0 3.1rem 0;
+        }
+    }
+}
+
+.btn-light:not(:disabled):not(.disabled).active,
+.btn-light:not(:disabled):not(.disabled):active,
+.show > .btn-light.dropdown-toggle {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid var(--slope-main-color);
+    outline: none;
+}
+
+.email-form {
+    .email-form-field {
+        position: relative;
+        margin-top: 3.3rem;
+        @media (max-width: 991px) {
+            margin-top: 1rem;
+        }
+    }
+    label {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: $color-paragraph-light;
+        line-height: 1.6rem;
+    }
+    input {
+        background-color: transparent;
+        color: $color-paragraph-light;
+        width: 100%;
+        border-color: $color-line;
+        &:focus {
+            outline: none;
+            border-color: var(--slope-main-color);
+        }
+        &::-webkit-input-placeholder {
+            color: $color-paragraph-light;
+        }
+        &::-moz-placeholder {
+            color: $color-paragraph-light;
+        }
+        &:-ms-input-placeholder {
+            color: $color-paragraph-light;
+        }
+        &:-moz-placeholder {
+            color: $color-paragraph-light;
+        }
+    }
+    button {
+        border: none;
+        background-color: transparent;
+        position: absolute;
+        top: 1.5rem;
+        right: 0;
+        i {
+            color: $color-paragraph-light;
+            font-size: 2rem;
+            line-height: 0;
+            @include animateIt;
+            &:hover {
+                color: var(--slope-main-color);
+            }
+        }
+    }
+}
+
+.contact-form-wrapper .nav-pills .nav-link.active,
+.contact-form-wrapper .nav-pills .show > .nav-link,
+.contact-form-wrapper .nav-pills .nav-link:hover {
+    background: transparent;
+    color: $color-black;
+    font-weight: 700;
+    position: relative;
+    span::after {
+        background-color: var(--slope-main-color);
+    }
+}
+
+.contact-form-wrapper .nav-pills .nav-link {
+    padding: 0;
+    color: $color-paragraph;
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 4rem;
+    display: inline-block;
+    @include animateIt;
+    span {
+        position: relative;
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: -1.4rem;
+            width: 100%;
+            height: 0.2rem;
+            background-color: transparent;
+        }
+    }
+}
+
+.contact-form-wrapper {
+    .nav-pills {
+        margin-top: -3rem;
+        margin-left: -6rem;
+        li {
+            display: block;
+            width: max-content;
+            margin-top: 3rem;
+            margin-left: 6rem;
+        }
+    }
+}
+
+.contact-form-tab {
+    margin-bottom: 9.2rem;
+    @media (max-width: 991px) {
+        margin-bottom: 5rem;
+    }
+}
+
+.dropdown-toggle::after {
+    content: '\f107';
+    font-family: 'Font Awesome 5 Free';
+    font-size: 1.8rem;
+    color: $color-grey-2;
+    border: none;
+    font-weight: 900;
+}
+
+.bootstrap-select.show {
+    outline: none;
+    .dropdown-toggle::after {
+        content: '\f106';
+    }
+}
+
+.bootstrap-select .dropdown-toggle:focus,
+.bootstrap-select > select.mobile-device:focus + .dropdown-toggle {
+    outline: none !important;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    box-shadow: none;
+}
+
+.btn-light:not(:disabled):not(.disabled).active:focus,
+.btn-light:not(:disabled):not(.disabled):active:focus,
+.show > .btn-light.dropdown-toggle:focus {
+    box-shadow: none;
+}
+
+.footer {
+    .wpcf7 form .wpcf7-response-output,
+    .wpcf7-not-valid-tip {
+        color: $color-white;
+    }
+}
+.contact-form-wrapper {
+    .wpcf7 form .wpcf7-response-output,
+    .wpcf7-not-valid-tip {
+        color: $color-black;
+    }
+}
+
+.wpcf7 form .wpcf7-response-output {
+    font-size: 1.6rem;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.wpcf7-not-valid-tip {
+    font-size: 1.6rem;
+}
